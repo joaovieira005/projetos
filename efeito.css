@@ -1,0 +1,373 @@
+body {
+  background:rgb(82, 0, 0);
+  margin:0;
+  
+}
+
+
+
+
+
+.conteudo
+/*Irá alterar a cor das letras e funcionalidade*/
+{
+    width:100vw;
+    padding: 1rem;
+    color:aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%); /*Centraliza os contéudos*/
+    margin:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.titulo
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:2px;
+    font-size:2rem;
+    text-align:center;
+    text-shadow: 0 0 30px white;
+}
+
+.conteudo button
+{
+height: 50px;
+width:50px;
+background:none;/*Retira cor de fundo*/
+color:rgb(255, 193, 23); /*coloca cor nas letras dos botões*/
+outline:none;
+border: 2px solid rgb(40, 104, 4);/*cor na borda dos botões*/
+border-radius:25px; /*transforma os botões quadrados em círculos*/
+margin: 0 12px;
+}
+
+.conteudo label 
+{
+padding: 10px; /*distância entre os botões e a velocidade*/
+}
+
+.conteudo #quantidade
+{
+    width:140px;
+    height:40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    outline:none;
+    border:none;
+    padding: 0 5px;
+}
+
+.conteudo #submit
+{
+    height:40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid rgb(40, 104, 4);
+    background:none;
+    outline:none;
+    color:rgb(255, 193, 23);
+}
+
+button:hover, #submit:hover, button:active
+/*Quando o mouse tocar nos botões irá mudar a cor*/
+{
+    outline:none;
+    background:rgb(11, 46, 6);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.principal
+{
+    border-radius:25px;
+    height:20vh;
+    width:100vw;
+    display:flex; /*fará as luzes se organizarem no topo horizontalmente*/
+    justify-content:center;
+    align-items:center;
+}
+
+.circulo
+{
+    display:flex;
+    margin:1rem;
+    border-radius:50%;
+    height:50px;
+    width: 50px;
+    background:rgb(0,0,0,0.3);
+    position:relative;
+    transition:1s all ease;
+}
+
+.circulo:before
+{
+/*personalização do cubos ("varal")*/
+position:absolute;
+content:'';
+height:15px;
+width:15px;
+left:17.5px;
+top:-15px;
+margin:0;
+padding:0;
+display:block;
+background:#420f2f;
+position:relative;
+border-radius:2px;
+display:inline-block;
+border-bottom: 2px solid rgb(136, 87, 95);
+}
+
+
+.circulo:after
+/*personalização dos fios do varal*/
+{
+    position:absolute;
+    content:'';
+    top:-20px;
+    left:30px;
+    position:absolute;
+    width:70px;
+    height:18.6666666667px;;
+    border-bottom:solid rgb(156, 121, 5) 2px;
+    border-radius:50%;
+}
+
+.circulo:last-child::after
+{
+content:'';
+position:absolute;
+border:none;
+}
+
+.vermelho
+{
+    background:rgb(167, 13, 13);
+    animation:glow-1 1s infinite;
+}
+
+.laranja
+{
+background:rgb(255, 102, 0);
+animation:glow-2 1s infinite;
+}
+
+.amarelo
+{
+    background:rgb(211, 211, 34);
+    animation:glow-3 1s infinite;
+}
+.verde
+{
+    background:rgb(8, 94, 8);
+    animation:glow-4 1s infinite;
+}
+.azul
+{
+    background:rgb(10, 10, 163);
+    animation:glow-5 1s infinite;
+}
+.anil
+{
+    background:indigo;
+    animation:glow-6 1s infinite;
+}
+.violeta
+{
+    background:violet;
+    animation:glow-7 1s infinite;
+}
+/*Efeito de piscapisca*/
+@keyframes glow-1
+{
+    0%,
+    100%{box-shadow:0 0 20px 5px red;}
+    50%{box-shadow:none;}
+}
+/*Alterna valores no 50% e 100%*/
+@keyframes glow-2
+{
+    0%,
+    100%{box-shadow:none;}
+    50%{box-shadow:0 0 20px 5px orange;}
+}
+@keyframes glow-3
+{
+    0%,
+    100%{box-shadow:0 0 20px 5px yellow;}
+    50%{box-shadow:none;}
+}
+@keyframes glow-4
+{
+    0%,
+    100%{box-shadow:none;}
+    50%{box-shadow:0 0 20px 5px green;}
+}
+@keyframes glow-5
+{
+    0%,
+    100%{box-shadow:0 0 20px 5px blue;}
+    50%{box-shadow:none;}
+}
+@keyframes glow-6
+{
+    0%,
+    100%{box-shadow:none;}
+    50%{box-shadow:0 0 20px 5px indigo;}
+}
+@keyframes glow-7
+{
+    0%,
+    100%{box-shadow:0 0 20px 5px violet;}
+    50%{box-shadow:none;}
+}
+
+@-webkit-keyframes principal-glow {
+    0%, 100% {
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #c0392b, 0 0 60px #c0392b, 0 0 70px #c0392b;
+    }
+    25% {
+text-shadow: 0 0 20px #fff, 0 0 30px #f1c40f, 0 0 40px #ff4da6, 0 0 50px #f1c40f, 0 0 60px #f1c40f, 0 0 70px #f1c40f, 0 0 80px #ff4da6;
+    }
+    50% {
+text-shadow: 0 0 20px #fff, 0 0 30px #74f7e1, 0 0 40px #74f7e1, 0 0 50px #74f7e1, 0 0 60px #74f7e1, 0 0 70px #74f7e1, 0 0 80px #74f7e1;
+    }
+    75% {
+text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71, 0 0 60px #2ecc71, 0 0 70px #2ecc71, 0 0 80px #2ecc71;
+    }
+}
+
+.menu h1{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+.oque-podemos {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 175px;
+  padding-top: 75px;
+}
+
+.oque-podemos-txt {
+  font-size: 29px;
+  padding: 0 0 0 20px;
+  border-style: solid;
+  border-width: 0 0 0 5px;
+  border-color: rgb(255, 255, 255);
+  font-weight: 0;
+  color: #fff;
+}
+
+.orcamento-gratis {
+  margin-top: 160px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.orcamento-gratis-titulo {
+  margin-left: 180px;
+  font-size: 44px;
+  letter-spacing: 1.5px;
+}
+
+.imagem-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* Ajuste o tamanho dos quadrados */
+  gap: 10px;
+  margin-left: 0px;
+  margin-top: 60px;
+
+}
+
+.imagem-container {
+  width: 400px;
+  /* Aumente o tamanho dos quadrados */
+  height: 250px;
+  /* Aumente o tamanho dos quadrados */
+  border: 5px solid #ffffff;
+  /* borda inferior dos icones é palavras */
+  display: flex;
+  flex-direction: column;
+  /*colocando os nomes (celular,tablet,notebook) ficar em embaixo, não ao lado */
+  justify-content: center;
+  /* centralizando os itens no quadrado */
+  align-items: center;
+  transition: border 0.3s;
+  /* Adicione uma transição suave para a borda */
+
+}
+
+.imagem-container:hover {
+  border: 3px solid rgb(255, 255, 255);
+  /* Cor da borda quando o mouse passar por cima */
+}
+
+.imagem-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagem-container img {
+  width: 50%;
+  margin-left: 100px;
+}
+
+/*div excluir */
+.imagem-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.booder {
+  border-radius: 20px;
+}
+
+.ponto {
+  margin-left: -50px;
+}
+
+.imagem-container-2 {
+  width: 400px;
+  /* Aumente o tamanho dos quadrados */
+  height: 250px;
+  /* Aumente o tamanho dos quadrados */
+  border: 5px solid #eee5e5;
+  /* borda inferior dos icones é palavras */
+  display: flex;
+  flex-direction: column;
+  /*colocando os nomes (celular,tablet,notebook) ficar em embaixo, não ao lado */
+  justify-content: center;
+  /* centralizando os itens no quadrado */
+  align-items: center;
+  transition: border 0.3s;
+  /* Adicione uma transição suave para a borda */
+
+}
+
+.imagem-container-2:hover {
+  border: 3px solid rgb(4, 231, 4);
+  /* Cor da borda quando o mouse passar por cima */
+}
+
+.imagem-container-2:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagem-container p {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+  

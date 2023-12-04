@@ -1,0 +1,102 @@
+$primary-light-color: #e74c3c;
+$secondary-light-color: #2980b9;
+$third-light-color: #16a085;
+$cable-color: #95a5a6;
+$background: black;
+
+body {
+    background: $background;
+    overflow: hidden;
+}
+
+ul.lights {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 1350px;
+
+    li {
+        list-style: none;
+        width: 20px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 150px / 300px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: #2c3e50;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            left: 0px;
+            top: -10px;
+            z-index: 1;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: none;
+            border-bottom: solid 1px $cable-color;
+            width: 120px;
+            height: 40px;
+            border-radius: 50%;
+            left: -105px;
+            top: -30px;
+        }
+
+        &:nth-child(even) {
+            background: $primary-light-color;
+            animation: blink-1 1.2s infinite;
+        }
+
+        &:nth-child(odd) {
+            background: $secondary-light-color;
+            animation: blink-2 1.5s infinite;
+        }
+
+        &:nth-child(3n+0) {
+            background: $third-light-color;
+            animation: blink-3 1s infinite;
+        }
+    }
+}
+
+.title {
+    font-family: Abel, 'sans-serif';
+    font-size: 16px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: $cable-color;
+}
+
+@keyframes blink-1 {
+    50% {
+        box-shadow: 0px 5px 25px $primary-light-color;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes blink-2 {
+    50% {
+        box-shadow: 0px 5px 25px $secondary-light-color;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes blink-3 {
+    50% {
+        box-shadow: 0px 5px 25px $third-light-color;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
