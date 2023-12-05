@@ -604,10 +604,14 @@ span {
     width: 80%;
   }
 
-.principal {
-  width: 90%;
-  padding: 0;
-  margin: 0;
+  .principal
+{
+    border-radius:25px;
+    height:20vh;
+    width:100vw;
+    display:flex; /*fará as luzes se organizarem no topo horizontalmente*/
+    justify-content:center;
+    align-items:center;
 }
 
 }
@@ -636,6 +640,16 @@ span {
     font-size: 3.5vw; /* Ajusta o tamanho do texto */
     margin-left: -40vw;
   }
+ .circulo {
+  display:flex;
+  margin:rem;
+  border-radius:50%;
+  height:50px;
+  width: 50px;
+  position:relative;
+  transition:1s all ease;
+}
+
 }
 
 
