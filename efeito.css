@@ -605,6 +605,30 @@ span {
 
 }
 
+@media screen and (max-width: 480px) {
+  .imagem-container,
+  .imagem-container-2 {
+    width: 90%; /* Reduz o tamanho para caber em telas menores */
+    margin: 10px auto; /* Centraliza e adiciona espaço entre os elementos */
+  }
+
+  .imagem-container img,
+  .imagem-container-2 img {
+    width: 40%; /* As imagens ocupam 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .imagem-container p {
+    margin-top: 15px; /* Adiciona um espaço mínimo para o texto */
+    font-size: 14px; /* Reduz o tamanho da fonte para ser mais legível */
+  }
+
+  .oque-podemos-txt {
+    font-size: 3.5vw; /* Ajusta o tamanho do texto */
+    margin-left: -40vw;
+  }
+}
+
 
 
   
