@@ -94,7 +94,6 @@ button:hover, #submit:hover, button:active
     margin:1rem;
     border-radius:50%;
     height:50px;
-    width: 50px;
     background:rgb(0,0,0,0.3);
     position:relative;
     transition:1s all ease;
@@ -559,7 +558,7 @@ span {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .conteudo {
     width: 220vw;
     font-size: 16px;
@@ -583,10 +582,7 @@ span {
     
   }
 
-  .imagem-container {
-    display: block;
-  }
-
+  
   .imagem-grid {
     display: block;
   }
@@ -603,17 +599,27 @@ span {
     margin-top: 10px;
   }
 
+  .geral {
+    width: 80%;
+  }
+
+.principal {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .imagem-container,
   .imagem-container-2 {
-    width: 90%; /* Reduz o tamanho para caber em telas menores */
+    width: 80%; /* Reduz o tamanho para caber em telas menores */
     margin: 10px auto; /* Centraliza e adiciona espaço entre os elementos */
   }
 
   .imagem-container img,
   .imagem-container-2 img {
+    margin-top: 30px;
     width: 40%; /* As imagens ocupam 100% do contêiner pai */
     height: auto; /* Mantém a proporção da imagem */
   }
@@ -621,6 +627,7 @@ span {
   .imagem-container p {
     margin-top: 15px; /* Adiciona um espaço mínimo para o texto */
     font-size: 14px; /* Reduz o tamanho da fonte para ser mais legível */
+    
   }
 
   .oque-podemos-txt {
