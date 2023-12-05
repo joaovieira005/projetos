@@ -2,64 +2,93 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <title>efeitos</title>
-    <link rel="stylesheet" href="efeito.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="efeito.js" defer></script>
+  <meta charset="utf-8">
+  <title>efeitos</title>
+  <link rel="stylesheet" href="efeito.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="efeito.js" defer></script>
 </head>
 
 <body>
-    <div class="geral">
+  <div class="geral">
     <div class="principal">
-        <div class="circulo vermelho"></div>
-        <div class="circulo laranja"></div>
-        <div class="circulo amarelo"></div>
-        <div class="circulo verde"></div>
-        <div class="circulo azul"></div>
-        <div class="circulo anil"></div>
-        <div class="circulo violeta"></div>
+      <div class="circulo vermelho"></div>
+      <div class="circulo laranja"></div>
+      <div class="circulo amarelo"></div>
+      <div class="circulo verde"></div>
+      <div class="circulo azul"></div>
+      <div class="circulo anil"></div>
+      <div class="circulo violeta"></div>
     </div>
-    <div class="natal">
-        <h1>feliz Natal</h1>
+
+
+
+    <div class="menu">
+      <h1>Meus Projetos </h1>
     </div>
-    
-<div class="menu">
-    <h1>Meus Projetos </h1>
+
+
+    <div class="oque-podemos" id="oque-podemos">
+      <h2 class="oque-podemos-txt">Este site é onde cada linha de código conta histórias.<br> Dos projetos simples aos
+        avançados, reflete minha<br> jornada no desenvolvimento. Explore<br> um universo de criatividade e inovação
+        aqui.⛄</h2>
+      <div class="imagem-grid">
+
+        <div class="imagem-container">
+          <a href="javascript:void(0)" onclick="mostrarAviso()">
+            <img id="imagemHamburgueria" class="booder" src="LOGO.png">
+          </a>
+          <span id="textoHamburgueria" onclick="mostrarAviso()">Ver Assintencia Tecnica</span>
+          <a href="https://joaovieira005.github.io/hamburgueria/" id="linkHamburgueria" style="display: none;"></a>
+        </div>
+
+
+
+
+
+        <div class="imagem-container">
+          <a href="javascript:void(0)" onclick="mostrarAviso()">
+            <img id="imagemHamburgueria" class="booder" src="https://thumbs.dreamstime.com/b/molde-do-%C3%ADcone-logotipo-da-loja-hamburguer-no-fundo-preto-127681862.jpg">
+          </a>
+          <span id="textoHamburgueria" onclick="mostrarAviso()">Ver Hamburgueria</span>
+          <a href="https://joaovieira005.github.io/hamburgueria/" id="linkHamburgueria" style="display: none;"></a>
+        </div>
+        <div id="aviso" class="aviso">
+          <p>Este site não está otimizado para dispositivos móveis. Deseja continuar?</p>
+          <button onclick="redirecionar()">Prosseguir</button>
+          <button onclick="fecharAviso()">Cancelar</button>
+        </div>
+
+        <div class="imagem-container-2">
+          <a href="javascript:void(0)" onclick="mostrarAviso()">
+            <img id="imagemHamburgueria" class="booder" src="interrogation-mark.png">
+          </a>
+          <div class="barra-progresso">
+            <div class="progresso" style="width: 50%;"></div>
+          </div>
+          <span id="textoHamburgueria" onclick="mostrarAviso()"></span>
+          <a href="https://joaovieira005.github.io/hamburgueria/" id="linkHamburgueria" style="display: none;"></a>
+        </div>
+        <div id="aviso" class="aviso">
+          <p>Você está prestes a ser redirecionado para a página da hamburgueria. Deseja continuar?</p>
+          <button onclick="redirecionar()">Sim</button>
+          <button onclick="fecharAviso()">Não</button>
+        </div>
+
+
+
+      </div>
+    </div>
   </div>
-  <div class="oque-podemos" id="oque-podemos">
-    <h2 class="oque-podemos-txt">Este site é onde cada linha de código conta histórias.<br> Dos projetos simples aos
-      avançados, reflete minha<br> jornada no desenvolvimento. Explore<br> um universo de criatividade e inovação
-      aqui.</h2>
-    <div class="imagem-grid">
 
-      <div class="imagem-container">
-        <a href="https://joaovieira005.github.io/" target="_blank">
-          <img src="LOGO.png">
-          <p>assistência Tecnica</p>
-        </a>
 
-      </div>
 
-      <div class="imagem-container">
-        <a href="index1.html">
-          <img class="booder"
-            src="https://thumbs.dreamstime.com/b/molde-do-%C3%ADcone-logotipo-da-loja-hamburguer-no-fundo-preto-127681862.jpg"
-            target="_blank">
-          <p>hamburgueria</p>
-        </a>
-      </div>
-
-      <div class="imagem-container-2">
-        <a href="">
-          <img src="interrogation-mark.png">
-        </a>
-      </div>
-    </div>
+  <div class="natal">
+    <h1>feliz Natal</h1>
   </div>
-</div>
 
 </body>
+
 </html>

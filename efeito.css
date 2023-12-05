@@ -3,11 +3,6 @@ body {
   margin:0;
   
 }
-
-
-
-
-
 .conteudo
 /*Irá alterar a cor das letras e funcionalidade*/
 {
@@ -257,16 +252,6 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
   padding-top: 75px;
 }
 
-.oque-podemos-txt {
-  font-size: 29px;
-  padding: 0 0 0 20px;
-  border-style: solid;
-  border-width: 0 0 0 5px;
-  border-color: rgb(255, 255, 255);
-  font-weight: 0;
-  color: #fff;
-}
-
 .orcamento-gratis {
   margin-top: 160px;
   font-family: 'Montserrat', sans-serif;
@@ -306,10 +291,54 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
 
 }
 
-.imagem-container:hover {
-  border: 3px solid rgb(255, 255, 255);
-  /* Cor da borda quando o mouse passar por cima */
+.oque-podemos-txt {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff0000; /* Vermelho */
+  text-shadow: 
+    0 0 5px #ffffff, /* Branco */
+    0 0 10px #ffffff, /* Branco */
+    0 0 15px #ffffff, /* Branco */
+    0 0 20px #ff0000, /* Vermelho */
+    0 0 25px #ff0000, /* Vermelho */
+    0 0 30px #ff0000, /* Vermelho */
+    0 0 35px #ff0000, /* Vermelho */
+    0 0 40px #ff0000; /* Vermelho */
+  animation: glow 2s ease-in-out infinite;
 }
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #ffffff, /* Branco */
+      0 0 10px #ffffff, /* Branco */
+      0 0 15px #ffffff, /* Branco */
+      0 0 20px #ff0000, /* Vermelho */
+      0 0 25px #ff0000, /* Vermelho */
+      0 0 30px #ff0000, /* Vermelho */
+      0 0 35px #ff0000, /* Vermelho */
+      0 0 40px #ff0000; /* Vermelho */
+  }
+  50% {
+    text-shadow: 
+      0 0 5px #ffcc00, /* Amarelo */
+      0 0 10px #ffcc00, /* Amarelo */
+      0 0 15px #ffcc00, /* Amarelo */
+      0 0 20px #228B22, /* Verde escuro */
+      0 0 25px #228B22, /* Verde escuro */
+      0 0 30px #228B22, /* Verde escuro */
+      0 0 35px #ffcc00, /* Amarelo */
+      0 0 40px #ffcc00; /* Amarelo */
+  }
+}
+
+
+
+.imagem-container a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #ffffff; /* Define a cor do texto */
+}
+
 
 .imagem-container:hover img {
   transform: scale(1.1);
@@ -317,14 +346,8 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
 }
 
 .imagem-container img {
-  width: 50%;
-  margin-left: 100px;
-}
-
-/*div excluir */
-.imagem-container img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 40%;
+  margin-left: 120px;
 }
 
 .booder {
@@ -334,6 +357,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
 .ponto {
   margin-left: -50px;
 }
+
 
 .imagem-container-2 {
   width: 400px;
@@ -364,10 +388,112 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
 }
 
 .imagem-container p {
-  text-decoration: none;
   color: #ffffff;
   text-align: center;
   margin-top: 10px;
-  
 }
+
+.aviso {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+  margin-top: 100px;
+}
+
+.imagem-container {
+  position: relative;
+}
+
+.imagem-container img {
+  display: block;
+}
+
+.imagem-container p {
+  text-align: center;
+}
+
+.imagem-container button {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+span {
+  color: #fff;
+  margin-top: 8px;
+}
+
+@keyframes changeColor {
+  0% { color: #ff1f1f; text-shadow: 0 0 10px #ff1f1f; }
+  25% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+  50% { color: #002bff; text-shadow: 0 0 10px #002bff; }
+  75% { color: #ffb700; text-shadow: 0 0 10px #ffb700; }
+  100% { color: #ff1f1f; text-shadow: 0 0 10px #ff1f1f; }
+}
+
+.imagem-container span {
+  animation: changeColor 5s infinite;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes changeBorder {
+  0% { border: 3px solid #ff1f1f; }
+  25% { border: 3px solid #00ff00; }
+  50% { border: 3px solid #002bff; }
+  75% { border: 3px solid #ffb700; }
+  100% { border: 3px solid #ff1f1f; }
+}
+
+.imagem-container img {
+  transition: border-color 0.5s;
+}
+
+.imagem-container img:hover {
+  animation: changeBorder 5s infinite;
+}
+
+.imagem-container .texto-natal {
+  color: green; /* Cor inicial do texto */
+  animation: natalAnimation 1s linear infinite alternate;
+}
+
+@keyframes natalAnimation {
+  0% {
+    color: red; /* Cor inicial do texto */
+  }
+  50% {
+    color: green; /* Outra cor festiva */
+  }
+  100% {
+    color: red; /* Cor final do texto */
+  }
+}
+.barra-progresso {
+  width: 30%;
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.progresso {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+
   

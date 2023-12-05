@@ -39,3 +39,41 @@ function convert(){
 
 play.addEventListener("click", on);
 stop.addEventListener("click", off);
+
+function mostrarAviso() {
+    document.getElementById('aviso').style.display = 'block';
+  }
+  
+  function redirecionar() {
+    document.getElementById('linkHamburgueria').click();
+  }
+  
+  function fecharAviso() {
+    document.getElementById('aviso').style.display = 'none';
+  }
+  
+  function mudarCursor(element) {
+    element.style.cursor = "pointer";
+  }
+  
+  function restaurarCursor(element) {
+    element.style.cursor = "auto";
+  }
+
+  document.getElementById('textoHamburgueria').addEventListener('click', () => {
+    document.getElementById('textoHamburgueria').style.animation = 'none';
+  });
+  
+  window.onload = function () {
+    document.getElementById('textoHamburgueria').style.animation = 'changeColor 5s infinite';
+  };
+
+  document.getElementById('textoHamburgueria').addEventListener('click', () => {
+    document.getElementById('textoHamburgueria').style.animation = 'none';
+  });
+  
+  window.onload = function () {
+    document.getElementById('textoHamburgueria').style.animation = 'changeColor 5s infinite';
+  };
+
+  
