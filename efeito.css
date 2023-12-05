@@ -288,6 +288,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
   align-items: center;
   transition: border 0.3s;
   /* Adicione uma transição suave para a borda */
+  margin-left: 70px
 
 }
 
@@ -374,6 +375,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71
   align-items: center;
   transition: border 0.3s;
   /* Adicione uma transição suave para a borda */
+  margin-left: 70px
 
 }
 
@@ -574,6 +576,31 @@ span {
     width: 40px;
     margin: 0 8px;
     font-size: 14px;
+  }
+
+  .oque-podemos {
+    
+    
+  }
+
+  .imagem-container {
+    display: block;
+  }
+
+  .imagem-grid {
+    display: block;
+  }
+
+  .imagem-container {
+    width: 165%;
+    margin-left: -40vw;
+    margin-top: 10px;
+  }
+
+  .imagem-container-2 {
+    width: 165%;
+    margin-left: -40vw;
+    margin-top: 10px;
   }
 
 }
