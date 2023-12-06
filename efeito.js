@@ -76,20 +76,21 @@ function mostrarAviso() {
     document.getElementById('textoHamburgueria').style.animation = 'changeColor 5s infinite';
   };
 
-  // lembrete na tela 
-  window.onload = function() { 
-    mostrarPopup();
-  };
-  
   // Função para exibir o popup
-  function mostrarPopup() {
-    document.getElementById('popup').style.display = 'block';
-  }
-  
-  // Função para fechar o popup ao clicar no botão de fechar
-  function fecharPopup() {
-    document.getElementById('popup').style.display = 'none';
-  }
+function mostrarPopup() {
+  document.getElementById('popup').style.display = 'block';
+}
+
+// Função para fechar o popup ao clicar no botão de fechar
+function fecharPopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+// Chamando a função para exibir o popup quando a janela é carregada
+window.onload = function() {
+  mostrarPopup();
+};
+
 
   
 
