@@ -638,7 +638,7 @@ span {
 
   .oque-podemos-txt {
     font-size: 3.5vw; /* Ajusta o tamanho do texto */
-    margin-left: 0vw;
+    margin-left: -30vw;
   }
  .circulo {
   display:flex;
